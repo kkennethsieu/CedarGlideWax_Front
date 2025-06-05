@@ -17,6 +17,7 @@ function CartTotal() {
       body: JSON.stringify({ items: cart }),
     });
 
+    console.log(cart);
     const data = await res.json();
 
     if (data.url) {
