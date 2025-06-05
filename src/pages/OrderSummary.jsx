@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import ConfirmationItem from "../components/confirmation/confirmationItem";
+import ConfirmationItem from "../components/confirmation/ConfirmationItem";
 import OrderTotal from "../components/confirmation/OrderTotal";
 import ParallaxHero from "../components/ParallaxHero";
 import useGetOrder from "../hooks/orders";
