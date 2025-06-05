@@ -1,7 +1,5 @@
 import { useSelector } from "react-redux";
 
-const URL = "http://localhost:4000";
-
 function CartTotal() {
   const subTotal = useSelector((state) => state.cart.totalAmount);
   const shipping = subTotal * 0.1;
@@ -11,7 +9,7 @@ function CartTotal() {
   console.log(cart);
 
   async function makePayment() {
-    const res = await fetch(`${URL}/checkout`, {
+    const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/checkout`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
