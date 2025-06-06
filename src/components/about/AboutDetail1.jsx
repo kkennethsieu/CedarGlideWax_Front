@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import FilledButton from "../buttons/FilledButton";
 import TransparentButton from "../buttons/TransparentButton";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { motion } from "framer-motion";
 
 function AboutDetail1() {
   const nav = useNavigate();
@@ -9,7 +10,13 @@ function AboutDetail1() {
   return (
     <div className="max-w-[1200px] mx-auto my-12 px-6 sm:px-16 flex flex-col-reverse lg:flex-row items-center gap-12">
       {/* Text Section */}
-      <div className="w-full space-y-6 lg:w-1/2">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        className="w-full space-y-6 lg:w-1/2"
+      >
         <h3 className="text-2xl font-semibold leading-tight sm:text-4xl font-gambetta">
           🏔️ Providing Quality Snowboard Wax Since 1990
         </h3>
@@ -54,10 +61,16 @@ function AboutDetail1() {
             </FilledButton>
           </button>
         </div>
-      </div>
+      </motion.div>
 
       {/* Images Section */}
-      <div className="flex flex-col w-[85%] gap-6 lg:w-1/2 md:w-full">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        className="flex flex-col w-[85%] gap-6 lg:w-1/2 md:w-full"
+      >
         <img
           src="/products/group_img.png"
           alt="CedarGlide Wax group 1"
@@ -68,7 +81,7 @@ function AboutDetail1() {
           alt="CedarGlide Wax group 2"
           className="w-full rounded-lg shadow-lg object-cover max-h-[320px]"
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

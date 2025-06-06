@@ -6,10 +6,7 @@ function HomeNav() {
   const nav = useNavigate();
 
   return (
-    <div
-      className="relative w-full h-[750px] bg-cover bg-center px-6 py-6"
-      style={{ backgroundImage: "url('/images/homePage.jpg')" }}
-    >
+    <div className="relative w-full h-[750px] bg-cover bg-center px-6 py-6 bg-homepage">
       {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-40"></div>
 

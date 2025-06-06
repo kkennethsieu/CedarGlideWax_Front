@@ -22,7 +22,10 @@ function Features3() {
           </p>
         </div>
         <img
+          loading="lazy"
           src="/images/feature1.jpg"
+          srcSet="/images/feature1Mobile.jpg 600w, /images/feature1.jpg 1200w"
+          sizes="(max-width: 600px) 600px, 1200px"
           alt="Temperature-Specific"
           className="rounded-lg shadow-lg md:w-[45%] object-cover"
         />
@@ -31,7 +34,10 @@ function Features3() {
       {/* Feature Block 2 */}
       <div className="flex flex-col items-center justify-between gap-10 md:flex-row">
         <img
+          loading="lazy"
           src="/images/feature2.jpg"
+          srcSet="/images/feature2Mobile.jpg 600w, /images/feature2.jpg 1200w"
+          sizes="(max-width: 600px) 600px, 1200px"
           alt="Eco-Friendly Blend"
           className="rounded-lg shadow-lg md:w-[45%] object-cover"
         />
@@ -58,7 +64,10 @@ function Features3() {
           </p>
         </div>
         <img
+          loading="lazy"
           src="/images/feature3.jpg"
+          srcSet="/images/feature3Mobile.jpg 600w, /images/feature3.jpg 1200w"
+          sizes="(max-width: 600px) 600px, 1200px"
           alt="Rider-Tested"
           className="rounded-lg shadow-lg md:w-[45%] object-cover"
         />

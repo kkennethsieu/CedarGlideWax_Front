@@ -54,7 +54,9 @@ function Faq() {
         {/* Image */}
         <img
           className="w-full max-w-[450px] h-auto rounded-lg object-cover shadow-lg mx-auto sm:mx-0 lg:max-w-[500px]"
-          src="../images/faqImg.jpg"
+          src="/images/faqImg.jpg"
+          srcSet="/images/faqImgMobile.jpg 600w, /images/faqImg.jpg 1200w"
+          sizes="(max-width: 600px) 600px, 1200px"
           alt="Snowboard waxing"
           loading="lazy"
         />

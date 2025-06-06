@@ -4,7 +4,7 @@ import BannerText from "./BannerText";
 
 function PerformanceBanner() {
   return (
-    <Banner image={"url('/images/mountains.jpg')"}>
+    <Banner className="bg-mountains">
       <BannerLogo />
       <BannerText>Performance You Can Feel</BannerText>
     </Banner>

@@ -4,7 +4,7 @@ import BannerText from "./BannerText";
 
 function CollabBanner() {
   return (
-    <Banner image={"url('/images/inCollab.jpg')"}>
+    <Banner className="bg-inCollab">
       <BannerText>In Collaboration With</BannerText>
       <CollabLogos />
     </Banner>

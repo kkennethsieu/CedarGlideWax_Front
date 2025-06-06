@@ -4,7 +4,7 @@ import BannerText from "./BannerText";
 
 function ThankYouBanner() {
   return (
-    <Banner image={"url('/images/orderBanner.jpg')"}>
+    <Banner className="bg-orderBanner">
       <BannerText>
         Thank You For Your Order! <br /> Let Us Know If You Have Questions!
       </BannerText>

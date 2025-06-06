@@ -4,7 +4,7 @@ import FilledButton from "../buttons/FilledButton";
 
 function Newsletter() {
   return (
-    <Banner image={"url('../images/newsletterImg.jpg')"}>
+    <Banner className="bg-newsletter">
       <BannerText>Subscribe for Exclusive Wax Deals & Insights</BannerText>
       <form className="z-30 flex flex-col items-center w-full max-w-md gap-3 px-4 mx-auto sm:flex-row">
         <input

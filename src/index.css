@@ -31,3 +31,60 @@ body {
   font-weight: 700;
   font-style: normal;
 }
+
+.bg-homepage {
+  background-image: url("/images/homePage.jpg");
+}
+
+.bg-parallax {
+  background-image: url("/images/testbg.jpg");
+}
+
+.bg-inCollab {
+  background-image: url("/images/inCollab.jpg");
+}
+
+.bg-newsletter {
+  background-image: url("/images/newsletterImg.jpg");
+}
+
+.bg-mountains {
+  background-image: url("/images/mountains.jpg");
+}
+
+.bg-designedBanner {
+  background-image: url("/images/banner3.jpg");
+}
+.bg-aboutUsBanner {
+  background-image: url("/images/aboutUsBanner.png");
+}
+.bg-orderBanner {
+  background-image: url("/images/orderBanner.jpg");
+}
+
+@media (max-width: 600px) {
+  .bg-homepage {
+    background-image: url("/images/homePageMobile.jpg");
+  }
+  .bg-parallax {
+    background-image: url("/images/testbgMobile.jpg");
+  }
+  .bg-inCollab {
+    background-image: url("/images/inCollabMobile.jpg");
+  }
+  .bg-newsletter {
+    background-image: url("/images/newsletterImgMobile.jpg");
+  }
+  .bg-mountains {
+    background-image: url("/images/mountainsMobile.jpg");
+  }
+  .bg-designedBanner {
+    background-image: url("/images/banner3Mobile.jpg");
+  }
+  .bg-aboutUsBanner {
+    background-image: url("/images/aboutUsBannerMobile.png");
+  }
+  .bg-orderBanner {
+    background-image: url("/images/orderBannerMobile.jpg");
+  }
+}

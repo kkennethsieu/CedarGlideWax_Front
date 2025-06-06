@@ -4,7 +4,10 @@ function TwoFeatures() {
       {/* Feature 1 */}
       <div className="flex flex-col-reverse items-center justify-center gap-10 lg:flex-row">
         <img
+          loading="lazy"
           src="/images/whyWax.png"
+          srcSet="/images/whyWaxMobile.png 600w, /images/whyWax.png 1200w"
+          sizes="(max-width:600px) 600, 1200px"
           alt="Why wax your snowboard"
           className="w-full md:max-w-[350px] max-w-[300px] lg:max-w-[400px] rounded-xl drop-shadow-lg"
         />
@@ -35,7 +38,10 @@ function TwoFeatures() {
           </p>
         </div>
         <img
+          loading="lazy"
           src="/images/whyChoose.png"
+          srcSet="/images/whyChooseMobile.png 600w, /images/whyChoose.png 1200w"
+          sizes="(max-width:600px) 600px, 1200px"
           alt="Why choose CedarGlide"
           className="w-full md:max-w-[400px] max-w-[300px] rounded-xl drop-shadow-lg"
         />

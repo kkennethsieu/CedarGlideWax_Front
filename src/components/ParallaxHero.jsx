@@ -15,10 +15,9 @@ function ParallaxHero({ children }) {
       {/* Background Layer */}
 
       <div
-        className="absolute top-0 left-0 w-full h-full duration-75 ease-linear transform bg-center bg-cover will-change-transform"
+        className="absolute top-0 left-0 w-full h-full duration-75 ease-linear transform bg-center bg-cover will-change-transform bg-parallax"
         style={{
-          backgroundImage: "url('/images/testbg.jpg')",
-          transform: `scale(${1 + offsetY * 0.00008})`,
+          transform: `scale(${1 + offsetY * 0.00058})`,
         }}
       ></div>
       {/* Overlay for brightness/contrast */}

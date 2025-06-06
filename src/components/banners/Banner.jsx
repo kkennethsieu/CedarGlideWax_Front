@@ -1,7 +1,7 @@
-function Banner({ image, children }) {
+function Banner({ image, children, className }) {
   return (
     <div
-      className="relative w-full px-4 py-10 bg-center bg-cover sm:px-8 sm:py-12"
+      className={`relative w-full px-4 py-10 bg-center bg-cover sm:px-8 sm:py-12 ${className}`}
       style={{ backgroundImage: image }}
     >
       {/* Overlay */}

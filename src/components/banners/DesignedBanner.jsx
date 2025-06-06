@@ -4,7 +4,7 @@ import BannerText from "./BannerText";
 
 function DesignedBanner() {
   return (
-    <Banner image={"url('/images/banner3.jpg')"}>
+    <Banner className="bg-designedBanner">
       <BannerLogo />
       <BannerText>
         Designed for the Ride Built for Glide, Grip, and Speed
